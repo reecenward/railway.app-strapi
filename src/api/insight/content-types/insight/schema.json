@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "insights",
+  "info": {
+    "singularName": "insight",
+    "pluralName": "insights",
+    "displayName": "Insight"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": { "type": "string", "required": true },
+    "slug": { "type": "uid", "targetField": "title", "required": true },
+    "description": { "type": "text" },
+    "content": { "type": "richtext" },
+    "thumbnail": { "type": "media", "multiple": false, "required": false, "allowedTypes": ["images"] },
+    "categories": { "type": "json" },
+    "readTime": { "type": "string" },
+    "publishedOn": { "type": "date" }
+  }
+}

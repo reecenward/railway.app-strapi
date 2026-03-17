@@ -1,1 +1,25 @@
-{"kind":"collectionType","collectionName":"products","info":{"singularName":"product","pluralName":"products","displayName":"Product"},"options":{"draftAndPublish":true},"attributes":{"name":{"type":"string","required":true},"slug":{"type":"uid","targetField":"name","required":true},"description":{"type":"richtext"},"price":{"type":"decimal"},"image":{"type":"media","multiple":false,"required":false,"allowedTypes":["images"]}}}
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "Product"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": { "type": "string", "required": true },
+    "slug": { "type": "uid", "targetField": "name", "required": true },
+    "description": { "type": "text" },
+    "productDescription": { "type": "richtext" },
+    "specs": { "type": "richtext" },
+    "brand": { "type": "string" },
+    "category": { "type": "string" },
+    "colors": { "type": "string" },
+    "bestSeller": { "type": "boolean", "default": false },
+    "thumbnail": { "type": "media", "multiple": false, "required": false, "allowedTypes": ["images"] },
+    "images": { "type": "media", "multiple": true, "required": false, "allowedTypes": ["images"] }
+  }
+}
